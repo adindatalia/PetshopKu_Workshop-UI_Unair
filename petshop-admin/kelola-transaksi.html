@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Admin Petshopku</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+          <span class="d-none d-lg-block">Petshopku</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle " href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >K. Anderson</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Kevin Anderson</h6>
+                <span>Owner</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="profil.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>Profil</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="profil.html"
+                >
+                  <i class="bi bi-gear"></i>
+                  <span>Pengaturan Akun</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="login.html">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+        <li class="nav-item">
+          <a class="nav-link" href="kelola-transaksi.html">
+            <i class="bi bi-wallet2"></i>
+            <span>Kelola Transaksi</span>
+          </a>
+        </li>
+        <!-- End Kelola Transaksi Nav -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="kelola-produk.html">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+            <span>Kelola Produk</span>
+          </a>
+        </li>
+        <!-- End Kelola Transaksi Nav -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="kelola-artikel.html">
+            <i class="bi bi-newspaper"></i>
+            <span>Kelola Artikel</span>
+          </a>
+        </li>
+        <!-- End Kelola Transaksi Nav -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="kelola-pengguna.html">
+            <i class="bi bi-people"></i>
+            <span>Kelola Pengguna</span>
+          </a>
+        </li>
+        <!-- End Kelola Transaksi Nav -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="profil.html">
+            <i class="bi bi-person-circle"></i>
+            <span>Profil</span>
+          </a>
+        </li>
+        <!-- End Kelola Transaksi Nav -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="login.html">
+            <i class="bi bi-box-arrow-right"></i>
+            <span>Logout</span>
+          </a>
+        </li>
+        <!-- End Kelola Transaksi Nav -->
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Kelola Transaksi</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Kelola Transaksi</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Data Transaksi Petshopku</h5>
+                <p>
+                  Berikut adalah data transaksi pembelian di petshop kami. Tabel
+                  ini mencakup informasi lengkap mengenai pembelian, termasuk
+                  nama pembeli, tanggal pembelian, nama hewan, jenis produk,
+                  jumlah, harga satuan, total harga, metode pembayaran, status,
+                  dan aksi yang dapat dilakukan.
+                </p>
+
+                <!-- Table with stripped rows -->
+                <div class="table-responsive">
+                  <table class="table datatable">
+                    <thead>
+                      <tr>
+                        <th>Nama Pembeli</th>
+                        <th>Tanggal Pembelian</th>
+                        <th>Nama Hewan</th>
+                        <th>Jenis Produk</th>
+                        <th>Jumlah</th>
+                        <th>Harga Satuan</th>
+                        <th>Total Harga</th>
+                        <th>Metode Pembayaran</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Andi</td>
+                        <td>2024-05-25</td>
+                        <td>Max</td>
+                        <td>Makanan Anjing</td>
+                        <td>2</td>
+                        <td>Rp 50,000</td>
+                        <td>Rp 100,000</td>
+                        <td>Tunai</td>
+                        <td><span class="badge bg-success">Selesai</span></td>
+                        <td
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="badge bg-info dropdown-toggle mx-1"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Edit Status
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Selesai</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Proses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gagal</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <button type="button" class="badge bg-danger mx-1">
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Budi</td>
+                        <td>2024-05-26</td>
+                        <td>Kitty</td>
+                        <td>Pasir Kucing</td>
+                        <td>1</td>
+                        <td>Rp 30,000</td>
+                        <td>Rp 30,000</td>
+                        <td>Kartu Kredit</td>
+                        <td><span class="badge bg-warning">Proses</span></td>
+                        <td
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="badge bg-info dropdown-toggle mx-1"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Edit Status
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Selesai</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Proses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gagal</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <button type="button" class="badge bg-danger mx-1">
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Citra</td>
+                        <td>2024-05-27</td>
+                        <td>Rocky</td>
+                        <td>Mainan Anjing</td>
+                        <td>3</td>
+                        <td>Rp 20,000</td>
+                        <td>Rp 60,000</td>
+                        <td>Transfer Bank</td>
+                        <td><span class="badge bg-danger">Gagal</span></td>
+                        <td
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="badge bg-info dropdown-toggle mx-1"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Edit Status
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Selesai</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Proses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gagal</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <button type="button" class="badge bg-danger mx-1">
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Dina</td>
+                        <td>2024-05-28</td>
+                        <td>Bella</td>
+                        <td>Makanan Kucing</td>
+                        <td>4</td>
+                        <td>Rp 25,000</td>
+                        <td>Rp 100,000</td>
+                        <td>Tunai</td>
+                        <td><span class="badge bg-success">Selesai</span></td>
+                        <td
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="badge bg-info dropdown-toggle mx-1"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Edit Status
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Selesai</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Proses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gagal</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <button type="button" class="badge bg-danger mx-1">
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Eko</td>
+                        <td>2024-05-29</td>
+                        <td>Lucky</td>
+                        <td>Obat Cacing</td>
+                        <td>1</td>
+                        <td>Rp 15,000</td>
+                        <td>Rp 15,000</td>
+                        <td>Kartu Kredit</td>
+                        <td><span class="badge bg-warning">Proses</span></td>
+                        <td
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="badge bg-info dropdown-toggle mx-1"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Edit Status
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Selesai</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Proses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gagal</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <button type="button" class="badge bg-danger mx-1">
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Fina</td>
+                        <td>2024-05-30</td>
+                        <td>Buddy</td>
+                        <td>Kandang Burung</td>
+                        <td>1</td>
+                        <td>Rp 200,000</td>
+                        <td>Rp 200,000</td>
+                        <td>Transfer Bank</td>
+                        <td><span class="badge bg-danger">Gagal</span></td>
+                        <td
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="badge bg-info dropdown-toggle mx-1"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Edit Status
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Selesai</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Proses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gagal</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <button type="button" class="badge bg-danger mx-1">
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Gita</td>
+                        <td>2024-05-31</td>
+                        <td>Milo</td>
+                        <td>Shampoo Kucing</td>
+                        <td>2</td>
+                        <td>Rp 35,000</td>
+                        <td>Rp 70,000</td>
+                        <td>Tunai</td>
+                        <td><span class="badge bg-success">Selesai</span></td>
+                        <td
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="badge bg-info dropdown-toggle mx-1"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Edit Status
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Selesai</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Proses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gagal</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <button type="button" class="badge bg-danger mx-1">
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Hadi</td>
+                        <td>2024-06-01</td>
+                        <td>Leo</td>
+                        <td>Vitamin Anjing</td>
+                        <td>3</td>
+                        <td>Rp 40,000</td>
+                        <td>Rp 120,000</td>
+                        <td>Kartu Kredit</td>
+                        <td><span class="badge bg-warning">Proses</span></td>
+                        <td
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="badge bg-info dropdown-toggle mx-1"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Edit Status
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Selesai</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Proses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gagal</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <button type="button" class="badge bg-danger mx-1">
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Ira</td>
+                        <td>2024-06-02</td>
+                        <td>Bobby</td>
+                        <td>Grooming Kit</td>
+                        <td>1</td>
+                        <td>Rp 150,000</td>
+                        <td>Rp 150,000</td>
+                        <td>Transfer Bank</td>
+                        <td><span class="badge bg-danger">Gagal</span></td>
+                        <td
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="badge bg-info dropdown-toggle mx-1"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Edit Status
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Selesai</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Proses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gagal</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <button type="button" class="badge bg-danger mx-1">
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Joko</td>
+                        <td>2024-06-03</td>
+                        <td>Max</td>
+                        <td>Leash</td>
+                        <td>1</td>
+                        <td>Rp 45,000</td>
+                        <td>Rp 45,000</td>
+                        <td>Tunai</td>
+                        <td><span class="badge bg-success">Selesai</span></td>
+                        <td
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="dropdown">
+                            <button
+                              class="badge bg-info dropdown-toggle mx-1"
+                              type="button"
+                              id="dropdownMenuButton"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Edit Status
+                            </button>
+                            <ul
+                              class="dropdown-menu"
+                              aria-labelledby="dropdownMenuButton"
+                            >
+                              <li>
+                                <a class="dropdown-item" href="#">Selesai</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Proses</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">Gagal</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <button type="button" class="badge bg-danger mx-1">
+                            Hapus
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- End Table with stripped rows -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Petshopku</span></strong
+        >. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+        Designed by <a href="https://Petshopku.com/">Petshopku</a>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
